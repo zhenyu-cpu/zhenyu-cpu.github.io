@@ -1,0 +1,11 @@
+.DS_Store
+.vscode
+.frontmatter
+./frontmatter.json
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
