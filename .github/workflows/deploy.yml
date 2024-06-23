@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hexo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -55,9 +55,7 @@ jobs:
             standalone: # optional, default is false             
       - name: Build with Hexo
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
