@@ -48,11 +48,7 @@ jobs:
         uses: pnpm/action-setup@v4.0.0
         with:
             version: 8
-            run_install: # optional, default is null
-            # File path to the package.json to read "packageManager" configuration
-            package_json_file: # optional, default is package.json
-            # When set to true, @pnpm/exe, which is a Node.js bundled package, will be installed, enabling using pnpm without Node.js.
-            standalone: # optional, default is false             
+            run_install: true          
       - name: Build with Hexo
         run: |
           pnpm run build
