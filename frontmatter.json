@@ -42,6 +42,59 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "updated",
+          "name": "updated",
+          "type": "datetime"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "choice",
+          "choices": [
+            "认证",
+            "授权",
+            "OAuth2.0",
+            "JWT",
+            "MFA",
+            "Session",
+            "Token"
+          ]
+        },
+        {
+          "title": "post",
+          "name": "post",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "mermaid",
+              "name": "mermaid",
+              "type": "fields",
+              "fields": [
+                {
+                  "title": "enable",
+                  "name": "enable",
+                  "type": "boolean"
+                },
+                {
+                  "title": "specific",
+                  "name": "specific",
+                  "type": "boolean"
+                },
+                {
+                  "title": "options",
+                  "name": "options",
+                  "type": "datetime"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
